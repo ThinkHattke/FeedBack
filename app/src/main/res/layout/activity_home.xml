@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FeedBack"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/q1"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="1. How was the quality of the service?"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q1worst"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_sad"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Worst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q1sad"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_neutral"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Sad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q1average"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_smile"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Average"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q1happy"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_happy"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Happy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q1love"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_love"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Amazing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/q2"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:translationX="1000dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="2. How was the quality of the product?"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q2worst"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_sad"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Worst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q2sad"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_neutral"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Sad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q2average"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_smile"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Average"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q2happy"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_happy"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Happy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q2love"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_love"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Happy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/q3"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:translationX="1000dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="3. How was the price of the product for it's quality?"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q3worst"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_sad"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Costly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q3sad"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_neutral"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Average"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q3average"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_smile"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Low"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q3happy"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_happy"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Good"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q3love"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/icon_love"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Worth it"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/q4"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:translationX="1000dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="4. Was the product you were looking, Available?"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q4down"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="17dp"
+                        android:src="@drawable/icon_dislike"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="No"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/q4up"
+                        android:elevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="17dp"
+                        android:src="@drawable/icon_like"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:text="Yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/q5"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:translationX="1000dp"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="5. Sorry for Inconvenience, would you like to tell us the product that you didn't find?"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/q5Input"
+                    android:gravity="start"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:maxLength="100"
+                    android:inputType="text|textMultiLine"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/round_white"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <Button
+                    android:layout_marginBottom="20dp"
+                    android:elevation="5dp"
+                    android:id="@+id/submit"
+                    android:background="@drawable/button_submit"
+                    android:text="Submit"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/done"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:translationX="1000dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:background="@android:color/holo_green_light"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_done"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:padding="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFF"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Thank You."/>
+
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:padding="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFFF"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Your Feedback is valuable to us."/>
+
+            <Button
+                android:id="@+id/restart"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_button"
+                android:text="Start Again"
+                android:layout_width="200dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

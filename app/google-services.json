@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "975231848623",
+    "firebase_url": "https://feedback-1b7ce.firebaseio.com",
+    "project_id": "feedback-1b7ce",
+    "storage_bucket": "feedback-1b7ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975231848623:android:8de4dede70066bc1",
+        "android_client_info": {
+          "package_name": "app.gaurav.com.feedback"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975231848623-jjpf0mo55g19k8mvu5s6s767frebna8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsNalG5mR4ksWcy67wlMjFaZ0mco67ZlM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
